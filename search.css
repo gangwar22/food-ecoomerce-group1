@@ -1,12 +1,33 @@
-#searchInput{
-    height: 6vh;
-    width: 50vw;
-   border-radius: 10px;
-    margin-left: 23.7vw;
-   padding-left: 15px;
-   margin-top: 10vh;
-    
+#searchInput {
+  height: 6vh;
+  width: 90%; 
+  border-radius: 10px;
+  margin: 10px auto; 
+  padding-left: 15px;
+  margin-top: 5vh; 
 }
+
+#searchResults,
+.box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+
+
+@media (max-width: 800px) {
+  #searchInput {
+      width: 90%; 
+  }
+}
+
+@media (max-width: 600px) {
+  #searchInput {
+      width: 90%;
+  }
+}
+
 
 .food-item {
     margin-bottom: 20px;
@@ -38,12 +59,7 @@
     margin: 0;
 }
 
-#searchResults {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px; 
-}
+
 
 
 /*////////////////////////////*/
