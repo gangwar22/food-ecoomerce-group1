@@ -258,6 +258,11 @@
             font-weight:bolder;
             margin-bottom: 20px;
         }
+
+        .price-size{
+            font-size: large;
+            font-weight: 500;
+        }
         
         
         .review h2 span {
