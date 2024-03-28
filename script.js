@@ -1,4 +1,3 @@
-
 const main = document.getElementById("main");
 const toggleForm = () => {
   const container = document.querySelector('.container');
@@ -15,6 +14,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+function box() {
+  let password = document.getElementById("password");
+  let password_2=document.getElementById("password-2")
+
+  if (password.type === "password" && password_2.type==="password") {
+    password.type = "text";
+    password_2.type="text";
+  } else {
+    password.type = "password";
+    password_2.type="password"
+  }
+}
 function button_signup() {
   let gmail = document.getElementById("email").value;
   let password = document.getElementById("password").value;
@@ -27,7 +38,7 @@ function button_signup() {
   localStorage.setItem("gmail", gmail);
   localStorage.setItem("password", password); 
   alert("Sign up completed");
-  window.location.href = "loginsignup.html";
+  window.location.href = "index.html";
 }
 
 function login() {
@@ -43,11 +54,13 @@ function login() {
 
   if (gmail === oldemail && password === oldpassword) {
     alert("Login successful");
-    window.location.href = "loginsign.html";
+    window.location.href = "index.html";
   } else {
     alert("Invalid email or password");
   }
 }
+
+
 const foodItems = [
     { name: "Pizza", image: "https://i.ibb.co/LQLdg0d/50a7b6a13177e653720b2a1d53e02958.jpg", price: "$245" },
     { name: "Patty Burger", image: "https://i.ibb.co/Xs8tVBs/bzfywxdvmkafjsakvhye.jpg", price: "Price not available" },
